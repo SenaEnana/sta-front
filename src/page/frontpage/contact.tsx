@@ -1,29 +1,89 @@
+import React from 'react';
+
 const Contact: React.FC = () => (
-    <section id="contact" className="py-20 bg-gray-100">
-        <div className="max-w-4xl mx-auto px-6">
-            <h3 className="text-3xl font-bold text-center mb-8">Contact Us</h3>
-            <form className="bg-white p-8 rounded-xl shadow space-y-6">
-                <input
-                    type="text"
-                    placeholder="Your Name"
-                    className="w-full border p-3 rounded"
-                />
-                <input
-                    type="email"
-                    placeholder="Your Email"
-                    className="w-full border p-3 rounded"
-                />
-                <textarea
-                    placeholder="Your Message"
-                    className="w-full border p-3 rounded h-32"
-                ></textarea>
-                <button
-                    type="submit"
-                    className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700"
-                >
-                    Send Message
-                </button>
-            </form>
+    <section id="contact" className="py-24 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6">
+            <div className="text-center mb-12">
+                <h3 className="text-3xl font-bold text-amber-600 mb-4">Get In Touch</h3>
+                <p className="text-gray-600">Have questions? Our agent team is here to help you find the perfect match.</p>
+            </div>
+
+            <div className="grid lg:grid-cols-3 gap-12">
+                {/* Left Side: Contact Information */}
+                <div className="space-y-8">
+                    <div>
+                        <h4 className="text-xl font-bold text-gray-900 mb-4">Contact Information</h4>
+                        <div className="space-y-4">
+                            <div className="flex items-center space-x-4">
+                                <span className="bg-amber-100 p-3 rounded-full text-amber-600">📍</span>
+                                <div>
+                                    <p className="text-sm font-bold text-gray-900">Our Location</p>
+                                    <p className="text-sm text-gray-600">Mexico, Addis Ababa</p>
+                                </div>
+                            </div>
+                            <div className="flex items-center space-x-4">
+                                <span className="bg-indigo-100 p-3 rounded-full text-indigo-600">📧</span>
+                                <div>
+                                    <p className="text-sm font-bold text-gray-900">Email Us</p>
+                                    <p className="text-sm text-gray-600">senaenana9@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="bg-indigo-600 p-6 rounded-2xl text-white">
+                        <h5 className="font-bold mb-2">Support Hours</h5>
+                        <p className="text-sm opacity-90">Monday — Friday: 9am - 5pm</p>
+                        <p className="text-sm opacity-90">Weekend: 9am - 12pm</p>
+                    </div>
+                </div>
+
+                {/* Right Side: Contact Form */}
+                <div className="lg:col-span-2">
+                    <form className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 space-y-4">
+                        <div className="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                                <input
+                                    type="text"
+                                    placeholder="John Doe"
+                                    className="w-full border border-gray-200 p-3 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none transition"
+                                />
+                            </div>
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                                <input
+                                    type="email"
+                                    placeholder="john@example.com"
+                                    className="w-full border border-gray-200 p-3 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none transition"
+                                />
+                            </div>
+                        </div>
+                        <div>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <select className="w-full border border-gray-200 p-3 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none transition bg-white">
+                                <option>General Inquiry</option>
+                                <option>Teacher Registration</option>
+                                <option>Parent/Student Support</option>
+                                <option>Billing Questions</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea
+                                placeholder="How can we help you today?"
+                                className="w-full border border-gray-200 p-3 rounded-lg h-32 focus:ring-2 focus:ring-amber-500 outline-none transition"
+                            ></textarea>
+                        </div>
+                        <button
+                            type="submit"
+                            className="w-full md:w-auto bg-amber-500 text-white font-bold px-10 py-4 rounded-xl hover:bg-amber-600 transition-all shadow-md hover:shadow-lg active:scale-95"
+                        >
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 );
