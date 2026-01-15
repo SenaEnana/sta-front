@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import Hero from "./app/hero";
+import Hero from "./page/frontpage/hero";
 import About from "./page/frontpage/about";
 import Services from "./page/frontpage/services";
 import Contact from "./page/frontpage/contact";

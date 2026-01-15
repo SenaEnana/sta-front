@@ -40,7 +40,7 @@ const Services: React.FC = () => (
             <div className="grid md:grid-cols-2 gap-12 mb-20">
                 <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
                     <h4 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                        <span className="w-8 h-1 bg-blue-500 rounded mr-3"></span>
+                        <span className="w-8 h-1 bg-amber-500 rounded mr-3"></span>
                         For Teachers
                     </h4>
                     <p className="text-gray-600 leading-relaxed mb-4">
@@ -55,7 +55,7 @@ const Services: React.FC = () => (
 
                 <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
                     <h4 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                        <span className="w-8 h-1 bg-green-500 rounded mr-3"></span>
+                        <span className="w-8 h-1 bg-indigo-500 rounded mr-3"></span>
                         For Students & Parents
                     </h4>
                     <p className="text-gray-600 leading-relaxed mb-4">
