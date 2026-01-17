@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
                     </p>
                     <a
                         href="#contact"
-                        className="inline-block bg-amber-600 text-black px-8 py-3 rounded-full font-bold shadow-lg hover:bg-gray-100 transition-all hover:scale-105"
+                        className="inline-block bg-amber-600 text-black px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition-all hover:scale-105"
                     >
                         Get Started
                     </a>

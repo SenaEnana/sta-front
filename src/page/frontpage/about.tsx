@@ -19,7 +19,7 @@ const About: React.FC = () => {
                             Revolutionizing Home Education Through Connection
                         </h2>
                         <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                            The Student Teacher Agent System (STAS) was born out of a simple need: to bridge the gap
+                            The Doorstep Tutors System (DTS) was born out of a simple need: to bridge the gap
                             between passionate educators and students seeking excellence. We provide a transparent,
                             secure, and efficient platform designed to solve the challenges of modern tutoring.
                         </p>

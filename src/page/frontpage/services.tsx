@@ -3,7 +3,7 @@ import React from 'react';
 const services = [
     {
         title: "Smart Home Matching",
-        description: "Our agent system pairs students with the perfect local tutor based on learning style, location, and academic goals.",
+        description: "Our system pairs students with the perfect local tutor based on learning style, location, and academic goals.",
         icon: "🏠"
     },
     {
@@ -33,7 +33,7 @@ const Services: React.FC = () => (
                     Empowering Education Through Expert Home Tutoring
                 </h2>
                 <p className="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">
-                    We bridge the gap between classroom learning and home study with a seamless, secure, and professional agent system.
+                    We bridge the gap between classroom learning and home study with a seamless, secure, and professional system.
                 </p>
             </div>
 
@@ -83,7 +83,7 @@ const Services: React.FC = () => (
             </div>
             
             <div className="mt-16 text-center">
-                <button className="bg-amber-500 text-black px-8 py-3 rounded-full font-bold hover:bg-amber-700 transition shadow-lg">
+                <button className="bg-amber-500 text-black px-8 py-3 rounded-full font-semibold hover:bg-amber-700 transition shadow-lg">
                     Get Started Today
                 </button>
             </div>
