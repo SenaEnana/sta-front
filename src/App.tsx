@@ -21,8 +21,6 @@ const App: React.FC = () => {
             <Contact />
           </>
         } />
-
-        {/* The Dedicated Sign Up Page */}
         <Route path="/signup" element={<SignUp/>} />
       </Routes>
       <Footer />
