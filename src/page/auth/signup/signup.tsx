@@ -5,7 +5,7 @@ import * as yup from "yup";
 import dtslogo from "/dts.png";
 
 const schema = yup.object({
-  email: yup.string().required("Email is required"),
+  email: yup.string().email().required("Email is required"),
   password: yup
     .string()
     .min(6, "Password must be at least 6 characters")
@@ -49,13 +49,13 @@ const Signup: React.FC = () => {
                 <UserIcon />
               </span>
               <input
-                type="text"
+                type="email"
                 id="email"
-                placeholder="johndoe"
+                placeholder="johndoe@gmail.com"
                 {...register("email")}
                 className={`w-full pl-10 pr-4 py-2.5 border rounded-lg transition-all outline-none focus:ring-2 ${errors.email
-                    ? "border-red-500 focus:ring-red-200"
-                    : "border-gray-300 focus:border-amber-500 focus:ring-amber-200"
+                  ? "border-red-500 focus:ring-red-200"
+                  : "border-gray-300 focus:border-amber-500 focus:ring-amber-200"
                   }`}
               />
             </div>
@@ -64,7 +64,6 @@ const Signup: React.FC = () => {
             )}
           </div>
 
-          {/* Password Field */}
           <div>
             <label htmlFor="password" title="password" className="block text-sm font-semibold text-gray-700 mb-1">
               Password <span className="text-red-500">*</span>
@@ -79,8 +78,8 @@ const Signup: React.FC = () => {
                 placeholder="••••••••"
                 {...register("password")}
                 className={`w-full pl-10 pr-4 py-2.5 border rounded-lg transition-all outline-none focus:ring-2 ${errors.password
-                    ? "border-red-500 focus:ring-red-200"
-                    : "border-gray-300 focus:border-amber-500 focus:ring-amber-200"
+                  ? "border-red-500 focus:ring-red-200"
+                  : "border-gray-300 focus:border-amber-500 focus:ring-amber-200"
                   }`}
               />
             </div>
@@ -101,7 +100,6 @@ const Signup: React.FC = () => {
   );
 };
 
-// Extracted SVGs for cleaner code
 const UserIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-400">
     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" />
