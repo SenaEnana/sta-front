@@ -7,8 +7,8 @@ const Footer: React.FC = () => (
             <div className="text-left">
                 <h4 className="text-white text-xl font-bold mb-4">DTS</h4>
                 <p className="text-sm leading-relaxed mb-4">
-                    The Doorstep Tutors System (DTS) is dedicated to bridging 
-                    the gap between expert instructors and students for high-quality, 
+                    The Doorstep Tutors System (DTS) is dedicated to bridging
+                    the gap between expert instructors and students for high-quality,
                     personalized home education.
                 </p>
             </div>
@@ -31,7 +31,6 @@ const Footer: React.FC = () => (
             </div>
         </div>
 
-        {/* Bottom Credits */}
         <div className="max-w-7xl mx-auto px-6 pt-8 text-center md:flex md:justify-between items-center text-xs text-gray-500 uppercase tracking-widest">
             <p>© 2026 Doorstep Tutors System. All rights reserved.</p>
             <p className="mt-4 md:mt-0">
