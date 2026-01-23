@@ -90,7 +90,7 @@ const Signup: React.FC = () => {
 
           <button
             type="submit"
-            className="w-full py-3 px-4 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-lg shadow-md transition-all active:scale-[0.98] focus:ring-2 focus:ring-amber-300"
+            className="w-full py-3 px-4 bg-amber-500 hover:bg-amber-600 text-black font-bold rounded-lg shadow-md transition-all active:scale-[0.98] focus:ring-2 focus:ring-amber-300"
           >
             Sign Up
           </button>

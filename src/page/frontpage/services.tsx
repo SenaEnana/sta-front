@@ -1,4 +1,4 @@
-import React from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 const services = [
     {
@@ -83,8 +83,8 @@ const Services: React.FC = () => (
             </div>
 
             <div className="mt-16 text-center">
-                <button className="bg-amber-500 text-black px-8 py-3 rounded-full font-semibold hover:bg-amber-700 transition shadow-lg">
-                    Get Started Today
+                <button className="bg-amber-500 text-black px-8 py-3 rounded-full cursor-pointer font-semibold hover:bg-amber-700 transition shadow-lg">
+                    <HashLink to="/signup">Get Started Today</HashLink>
                 </button>
             </div>
         </div>

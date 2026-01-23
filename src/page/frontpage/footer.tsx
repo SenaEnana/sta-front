@@ -1,4 +1,4 @@
-import React from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 const Footer: React.FC = () => (
     <footer className="bg-gray-900 text-gray-300 pt-16 pb-8">
@@ -15,10 +15,10 @@ const Footer: React.FC = () => (
             <div className="text-left">
                 <h4 className="text-white text-lg font-semibold mb-4">Quick Links</h4>
                 <ul className="space-y-2 text-sm">
-                    <li><a href="#" className="hover:text-amber-500 transition">Home</a></li>
-                    <li><a href="#about" className="hover:text-amber-500 transition">About Us</a></li>
-                    <li><a href="#services" className="hover:text-amber-500 transition">Services</a></li>
-                    <li><a href="#contact" className="hover:text-amber-500 transition">Contact Support</a></li>
+                    <li><HashLink smooth to="/#" className="hover:text-amber-500 transition">Home</HashLink></li>
+                    <li><HashLink smooth to="/#about" className="hover:text-amber-500 transition">About</HashLink></li>
+                    <li><HashLink smooth to="/#services" className="hover:text-amber-500 transition">Services</HashLink></li>
+                    <li><HashLink smooth to="/#contact" className="hover:text-amber-500 transition">Contact</HashLink></li>
                 </ul>
             </div>
             <div className="text-left">
